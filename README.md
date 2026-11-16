@@ -1,78 +1,46 @@
-# 🧠 Oracle SQL – Mini HR Database (19c Compatible)
+# Oracle SQL – Mini HR Database
 
-Welcome! This repository contains a hands-on **Mini Human Resources (HR) Database** project designed and built by **Baskar.inco**, focused on real-world enterprise SQL practices using **Oracle 19c**.
+A hands-on Oracle SQL project demonstrating relational database design through a small Human Resources data model.
 
----
+## Project Scope
 
-## 📌 About the Project
+The project covers:
 
-This SQL project simulates the database layer of a simple HR system. It covers:
+- Relational table design
+- Primary and foreign keys
+- Unique and check constraints
+- Sample master data
+- Basic enterprise-style SQL validation
+- Oracle-compatible SQL practice
 
-- ✅ Relational table design
-- ✅ Data integrity using **primary, foreign, unique, and check constraints**
-- ✅ Sample data insertion
-- ✅ Oracle-compliant SQL syntax
+## Data Model
 
-This is perfect for practicing core SQL skills needed for **ERP systems**, **backend data design**, and **interview-level database logic**.
+The core model contains:
 
----
+- `departments`
+- `employees`
 
-## 🗃️ Tables Included
+Employees are associated with departments through a foreign-key relationship.
 
-### 🔹 `departments`
-| Column     | Type          | Constraints           |
-|------------|---------------|------------------------|
-| dept_id    | NUMBER        | Primary Key           |
-| dept_name  | VARCHAR2(50)  | NOT NULL, UNIQUE      |
-| location   | VARCHAR2(50)  | NOT NULL              |
+## Technical Stack
 
-### 🔹 `employees`
-| Column     | Type           | Constraints                       |
-|------------|----------------|------------------------------------|
-| emp_id     | NUMBER         | Primary Key                        |
-| emp_name   | VARCHAR2(50)   | NOT NULL                           |
-| job_title  | VARCHAR2(50)   | NOT NULL                           |
-| hire_date  | DATE           | Optional (can be set to SYSDATE)   |
-| salary     | NUMBER(8,2)    | Must be > 0 (`CHECK`)              |
-| dept_id    | NUMBER         | Foreign Key → `departments.dept_id` |
+- Oracle Database
+- SQL
+- Oracle SQL Developer / Oracle Live SQL
 
----
+## Purpose
 
-## 📥 Sample Insert Data
+This project demonstrates the SQL foundation used for larger ERP-oriented database work.
 
-- 2 Departments (Finance, Sales)
-- 4 Employees assigned across those departments
+My more advanced portfolio project is [Oracle Procurement & Invoice Management System](https://github.com/baskar-inc/oracle-procurement-invoice-management-system).
 
----
+## Status
 
-## 🧪 How to Run
+**Completed SQL learning project**
 
-You can execute this project in:
-- 🔹 **Oracle Live SQL** → [https://livesql.oracle.com](https://livesql.oracle.com)
-- 🔹 Oracle SQL Developer (connected to Oracle 19c or 21c)
-- 🔹 Oracle Cloud Free Tier Autonomous DB
+The repository is intentionally small and focused on database fundamentals.
 
----
-
-## 🛠️ Skills Demonstrated
-
-- Table creation with constraints
-- Foreign key linking and validation
-- Data consistency and validation rules
-- Enterprise-style naming conventions
-- Oracle-friendly SQL coding
-
----
-
-## 🚀 Author
+## Author
 
 **Baskar R**  
-Final-year B.E. Electronics & Communication Engineering  
-Aspiring Oracle ERP Consultant & SQL Specialist  
-🔗 [LinkedIn](https://www.linkedin.com/in/baskarinc)  
-🌐 [Portfolio](https://profilebaskar.lovable.app)
-
----
-
-> 💡 *“Database isn’t just storage — it’s strategy.”*  
-> — Baskar.inco
+Aspiring Oracle ERP / SQL / PL/SQL professional
